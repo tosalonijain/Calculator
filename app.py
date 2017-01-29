@@ -14,6 +14,7 @@ class calculator(QtGui.QMainWindow, design1.Ui_MainWindow):
 
         super(calculator, self).__init__(parent)
         self.setupUi(self)
+        self.textEdit.setReadOnly(True)
         self.textEdit.setText("0")
         self.zero.clicked.connect(self.nums)
         self.one.clicked.connect(self.nums)

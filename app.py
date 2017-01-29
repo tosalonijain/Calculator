@@ -1,4 +1,5 @@
 from PyQt4 import QtGui
+from PyQt4 import QtCore
 import sys
 import design1
 from math import log, log10, sqrt, sin, cos, tan, radians
@@ -164,6 +165,9 @@ def main():
     app = QtGui.QApplication(sys.argv)
     form = calculator()
     form.setWindowTitle("calculator")
+    p = form.palette()
+    p.setColor(form.backgroundRole(), QtCore.Qt.blue)
+    form.setPalette(p)
     form.show()
     app.exec_()
 if __name__ == '__main__':

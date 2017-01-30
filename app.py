@@ -1,8 +1,8 @@
 from PyQt4 import QtGui
 from PyQt4 import QtCore
 import sys
-import design1
-from math import log, log10, sqrt, sin, cos, tan, radians
+import design1 #importing design code
+from math import log, log10, sqrt, sin, cos, tan, radians #importing maths module
 n = 0.0
 new = 0.0
 tot = 0.0
@@ -48,7 +48,7 @@ class calculator(QtGui.QMainWindow, design1.Ui_MainWindow):
         self.e.clicked.connect(self.ee)
 
 
-    def nums(self):
+    def nums(self): #when digits are clicked
         global a
         global n
         global new
@@ -65,7 +65,7 @@ class calculator(QtGui.QMainWindow, design1.Ui_MainWindow):
             self.textEdit.setText(str(a))
             op = False
 
-    def Operator(self):
+    def Operator(self): #carry different operations
         global c
         global n
         global op
@@ -85,7 +85,7 @@ class calculator(QtGui.QMainWindow, design1.Ui_MainWindow):
 
 
 
-    def Equal(self):
+    def Equal(self): #showing answers
         global n
         global new
         global tot
@@ -138,7 +138,7 @@ class calculator(QtGui.QMainWindow, design1.Ui_MainWindow):
         tot=fac
              
         self.textEdit.setText(str(tot))
-    def Clear(self):
+    def Clear(self): #clear
         self.textEdit.setText("0")
         n = 0.0
         new = 0.0
@@ -152,7 +152,7 @@ class calculator(QtGui.QMainWindow, design1.Ui_MainWindow):
         l=len(s)
         ss=str(s[0:l-1])
         self.textEdit.setText(ss)
-    def Dec(self):
+    def Dec(self): #decimal numbers
         if "." not in self.textEdit.toPlainText():
             self.textEdit.setText(self.textEdit.toPlainText() + ".")
     def Pie(self):
@@ -166,7 +166,7 @@ def main():
     form = calculator()
     form.setWindowTitle("calculator")
     p = form.palette()
-    p.setColor(form.backgroundRole(), QtCore.Qt.blue)
+    p.setColor(form.backgroundRole(), QtCore.Qt.blue) #changing back ground colour
     form.setPalette(p)
     form.show()
     app.exec_()

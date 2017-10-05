@@ -6,6 +6,7 @@ this is a calculator app written in PyQt
 the projects contain 2 codes
 design1.py----- made using qt designer 
 app.py ---- it first imports design1.py then performs different operations
+* run app.py to use the calculator
 
 operations included in  this calculator
 

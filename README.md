@@ -1,28 +1,34 @@
-# calculator
+# Calculator
 
-## project's description
+## Project's description:
 --------------------
-this is a calculator app written in PyQt
-the projects contain 2 codes
+This is a calculator app written in PyQt.
+The project contains 2 files:
+
 design1.py----- made using qt designer 
+
 app.py ---- it first imports design1.py then performs different operations
-* run app.py to use the calculator
 
-operations included in  this calculator
+> run app.py to use the calculator
 
-*sum/differnce/multiplication / addition / remainder
+Operations included in  this calculator:
 
-* different trignometric function , accepting values in degrees
+* sum, difference, multiplication, addition, and remainder
 
-*log functions
+* different trignometric function , accepts values in degrees
 
-*power and square root
+* log functions
 
-INSTALLATION REQUIRED 
+* exponents and square root
+
+## Demo Screenshot:
+![calculator screenshot](demo.png "Demo for this calculator")
+
+## INSTALLATION REQUIRED 
 ----------
 PyQt4 must be installed for the project to run
-linux user can write the command
- :
-sudo apt-get install python-qt4
-windows users can download from link : 
-https://www.riverbankcomputing.com/software/pyqt/download
+Linux user can write the command:
+`sudo apt-get install python-qt4`
+
+Windows users can download from the following link: 
+`https://www.riverbankcomputing.com/software/pyqt/download`

@@ -86,7 +86,7 @@ class calculator(QtGui.QMainWindow, design1.Ui_MainWindow):
 
 
     def Equal(self): #showing answers
-        global n
+        global n   #global variables
         global new
         global tot
         global operator
@@ -147,7 +147,7 @@ class calculator(QtGui.QMainWindow, design1.Ui_MainWindow):
         op = False
         c = 0
         a=0
-    def Undo(self):
+    def Undo(self): #for undoing
         s=str(self.textEdit.toPlainText())
         l=len(s)
         ss=str(s[0:l-1])
